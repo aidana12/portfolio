@@ -1,0 +1,15 @@
+@media only screen and (max-width: 767px) {
+  .hc {
+    top: initial;
+    bottom: 0;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 50px;
+
+    svg {
+      margin-bottom: 0;
+    }
+  }
+
+}

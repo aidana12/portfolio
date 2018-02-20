@@ -1,0 +1,29 @@
+<div class="sc">
+  <div class="p">
+    <!--<h1>Portfolio</h1>-->
+    <h2>Projects</h2>
+    <div class="pi" *ngFor="let PortfolioItem of PortfolioItem">
+      <a target="_blank" href="{{ PortfolioItem.href }}"></a>
+      <div class="pp">
+        <img src="{{ PortfolioItem.imgPath }}">
+      </div>
+      <div class="pt">
+        <h5>{{ PortfolioItem.name }}</h5>
+        <p>{{ PortfolioItem.description }}</p>
+        <p>{{ PortfolioItem.date }}</p>
+      </div>
+    </div>
+    <div class="pi explanation">
+      <a target="_blank" href="#"></a>
+      <div class="pp">
+        <img src="../../assets/ls.png">
+      </div>
+      <div class="pt">
+        <h5>Disclaimer</h5>
+        <p>Most projects were done with the amazing Luminum team.<br>All rights belong to Luminum and their customers.</p>
+        <p></p>
+      </div>
+    </div>
+    <p>Design for these projects, except for blockport.io, was done by <a href="https://tree62.nl/" target="_blank">Tree62</a>.</p>
+  </div>
+</div>

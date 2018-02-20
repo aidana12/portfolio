@@ -1,0 +1,166 @@
+//-- Fonts
+@import url("https://use.typekit.net/lck7lzo.css");
+
+* {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+h4 {
+  font-size: 23px;
+  line-height: 33px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+p {
+  font-size: 14stastpx;
+  line-height: 25px;
+}
+
+a {
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+span {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+//-- Colours
+$b: #000500;
+$bl: #0f0f0f;
+$gd: #1C1D21;
+$gb: #8A95A5;
+$glb: #C9DAEA;
+$wg: #FCFDFF;
+$ws: #FBF9FC;
+$rq: #A39BA8;
+$r: #CD4E55;
+$p: #AE81FF;
+$blu: #4891B9;
+$g: #A6C249;
+$y: #E6DB74;
+
+.function {
+  color: $y;
+}
+
+.id {
+  color: $g;
+}
+
+//-- Over variables
+$border: .15em;
+
+//-- Animations
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@include keyframes(customFadeIn) {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@include keyframes(typing) {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+@include keyframes(blink-caret) {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: $r;
+  }
+}
+
+.customFadeIn {
+  opacity: 0 !important;
+  animation: customFadeIn 0.25s ease-in;
+  animation-delay: 0.4s;
+}
+
+//-- Helper classes
+
+.overlay {
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.7);
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: $border solid $r;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 1.5s steps(25, end), blink-caret .75s step-end infinite 1.6s;
+}
+
+.ih {
+
+  svg {
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transform: perspective(1px) translateZ(0);
+  }
+
+  &:hover svg {
+    transform: scale(1.1);
+  }
+}
+

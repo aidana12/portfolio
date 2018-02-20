@@ -1,20 +1,44 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="lc">
+  <div class="mc" [ngClass]="{'overlay': isClassVisible === true}">
+    <div class="hc">
+      <a class="ih" (click)="addClass(id=2); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
+        <i class="fas fa-user-secret"></i>
+        <span>About</span>
+      </a>
+      <a class="ih" (click)="addClass(id=3); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
+        <!--<i class="far fa-star"></i>-->
+        <i class="fas fa-star"></i>
+        <span>Portfolio</span>
+      </a>
+      <a class="ih" (click)="addClass(id=4); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
+        <!--<i class="fas fa-gamepad"></i>-->
+        <!--<i class="far fa-play-circle"></i>-->
+        <i class="fas fa-play-circle"></i>
+        <span>Game</span>
+      </a>
+      <a class="ih" (click)="addClass(id=5); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
+        <!--<i class="fas fa-play"></i>-->
+        <i class="fas fa-video"></i>
+        <span>Animation</span>
+      </a>
+      <a class="ih" (click)="addClass(id=6); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
+        <!--<i class="fab fa-instagram"></i>-->
+        <!--href="https://www.instagram.com/__tacenda__/"-->
+        <i class="fas fa-camera-retro"></i>
+        <span>Photography</span>
+      </a>
+      <a class="ih" (click)="addClass(id=7); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
+        <i class="fas fa-info-circle"></i>
+        <!--<i class="fas fa-info"></i>-->
+        <span>More information</span>
+      </a>
+    </div>
+    <!--<app-intro [ngClass]="{'open': idOfOpen === 1 }"></app-intro>-->
+    <app-about [ngClass]="{'open': idOfOpen === 2 }"></app-about>
+    <app-portfolio [ngClass]="{'open': idOfOpen === 3 }"></app-portfolio>
+    <app-game [ngClass]="{'open': idOfOpen === 4 }"></app-game>
+    <app-animation [ngClass]="{'open': idOfOpen === 5 }"></app-animation>
+    <app-instagram [ngClass]="{'open': idOfOpen === 6 }"></app-instagram>
+    <app-info [ngClass]="{'open': idOfOpen === 7 }"></app-info>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
