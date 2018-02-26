@@ -1,3 +1,18 @@
+//-- Colours
+$b: #000500;
+$bl: #0f0f0f;
+$gd: #1C1D21;
+$gb: #8A95A5;
+$glb: #C9DAEA;
+$wg: #FCFDFF;
+$ws: #FBF9FC;
+$rq: #A39BA8;
+$r: #CD4E55;
+$p: #AE81FF;
+$blu: #69BAE5;
+$g: #A6C249;
+$y: #EDE176;
+
 //-- Fonts
 @import url("https://use.typekit.net/lck7lzo.css");
 
@@ -9,6 +24,10 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+h1, h2, h3 {
+  color: $ws;
+}
+
 h1 {
   font-size: 30px;
   line-height: 40px;
@@ -17,6 +36,8 @@ h1 {
 h2 {
   font-size: 28px;
   line-height: 38px;
+  width: 100%;
+  margin: 0 15px 30px;
 }
 
 h3 {
@@ -35,7 +56,7 @@ h5 {
 }
 
 p {
-  font-size: 14stastpx;
+  font-size: 14px;
   line-height: 25px;
 }
 
@@ -44,38 +65,21 @@ a {
   line-height: inherit;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
-span {
+span, button {
   font-size: 15px;
-  line-height: 25px;
-}
+  line-height: 15px;
+  cursor: pointer;
+  outline: none !important;
 
-//-- Colours
-$b: #000500;
-$bl: #0f0f0f;
-$gd: #1C1D21;
-$gb: #8A95A5;
-$glb: #C9DAEA;
-$wg: #FCFDFF;
-$ws: #FBF9FC;
-$rq: #A39BA8;
-$r: #CD4E55;
-$p: #AE81FF;
-$blu: #4891B9;
-$g: #A6C249;
-$y: #E6DB74;
-
-.function {
-  color: $y;
-}
-
-.id {
-  color: $g;
 }
 
 //-- Over variables
-$border: .15em;
+$border-radius: 4px;
+$border-width: .15em;
+$box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
 
 //-- Animations
 @mixin keyframes($name) {
@@ -130,6 +134,16 @@ $border: .15em;
 
 //-- Helper classes
 
+.btn {
+  background-color: transparent;
+  border: none;
+  border-radius: $border-radius;
+  color: $ws;
+  text-align: center;
+  padding: 14px;
+  width: 100px;
+}
+
 .overlay {
 
   &:after {
@@ -145,7 +159,7 @@ $border: .15em;
 
 .typewriter {
   overflow: hidden;
-  border-right: $border solid $r;
+  border-right: $border-width solid $r;
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 1.5s steps(25, end), blink-caret .75s step-end infinite 1.6s;

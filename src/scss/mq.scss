@@ -1,4 +1,13 @@
+.sc {
+  padding: 60px 0;
+}
+
 @media only screen and (max-width: 767px) {
+
+  .sc {
+    padding: 45px 0 95px;
+  }
+
   .hc {
     top: initial;
     bottom: 0;
