@@ -1,12 +1,17 @@
 <div class="sc">
-  <div class="game">
-    <!--<h2>Mainstream much?</h2>-->
-    <div [ngClass]="{'hideGameStart': gameStarted === true}" class="game-start">
-      <img src="../../assets/mines.svg">
-      <button (click)="startGame(); gameStarted = true" class="start btn">Start!</button>
+    <div class="game">
+        <!--<h2>Mainstream much?</h2>-->
+        <div id="board" oncontextmenu="return false;">
+            <div [ngClass]="{'hideGameStart': gameStarted === true}" class="game-start">
+                <img src="../../assets/mines.svg">
+                <button (click)="startGame(); gameStarted = true" class="start btn">Start!</button>
+                <div class="gameOver">
+                    <p>Hehe, you lost. :P</p>
+                </div>
+                <div class="gameWon">
+                    <p>Niiice, you won. :P</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="board">
-      <div class="snake"></div>
-    </div>
-  </div>
 </div>

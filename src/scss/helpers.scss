@@ -20,12 +20,17 @@ $y: #EDE176;
   font-family: "Proxima Nova", sans-serif;
 }
 
+$bw: 700;
+$nw: 400;
+$lw: 200;
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
 h1, h2, h3 {
   color: $ws;
+  font-weight: $bw;
 }
 
 h1 {
@@ -48,16 +53,26 @@ h3 {
 h4 {
   font-size: 23px;
   line-height: 33px;
+  font-weight: $bw;
 }
 
 h5 {
   font-size: 20px;
   line-height: 30px;
+  font-weight: $bw;
 }
 
-p {
+h6 {
+  color: $ws;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: $nw;
+}
+
+p, p span {
   font-size: 14px;
   line-height: 25px;
+  font-weight: $nw;
 }
 
 a {
@@ -70,7 +85,7 @@ a {
 
 span, button {
   font-size: 15px;
-  line-height: 15px;
+  line-height: 14px;
   cursor: pointer;
   outline: none !important;
 
@@ -135,13 +150,10 @@ $box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
 //-- Helper classes
 
 .btn {
-  background-color: transparent;
   border: none;
-  border-radius: $border-radius;
+  //border-radius: $border-radius;
   color: $ws;
   text-align: center;
-  padding: 14px;
-  width: 100px;
 }
 
 .overlay {

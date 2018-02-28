@@ -10,19 +10,40 @@
     &.hideGameStart {
       display: none;
     }
+  }
+
+  #board {
 
     button {
       position: absolute;
-      top: calc(50% - 22px);
-      left: calc(50% - 50px);
+      top: 118px;
+      left: 79px;
+      width: 75px;
+      padding: 9px;
+      background-color: transparent;
+      border: 2px solid #AE81FF;
     }
 
     img {
       width: 309px;
       height: auto;
     }
-  }
 
-  #board {
+    .gameOver, .gameWon {
+      position: absolute;
+      left: 0;
+      bottom: -25px;
+      display: none;
+      justify-content: center;
+      width: 100%;
+
+      p {
+        color: #FBF9FC;
+      }
+
+      &.show {
+        display: flex;
+      }
+    }
   }
 }

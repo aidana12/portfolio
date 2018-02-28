@@ -5,7 +5,15 @@
 @media only screen and (max-width: 767px) {
 
   .sc {
-    padding: 45px 0 95px;
+    padding: 30px 0 80px;
+
+    h2 {
+      margin: 0 15px 15px !important;
+    }
+
+    .pi {
+      margin: 0 15px 15px !important;
+    }
   }
 
   .hc {

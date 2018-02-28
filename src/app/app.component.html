@@ -6,34 +6,27 @@
         <span>About</span>
       </a>
       <a class="ih" (click)="addClass(id=3); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
-        <!--<i class="far fa-star"></i>-->
         <i class="fas fa-star"></i>
         <span>Portfolio</span>
       </a>
       <a class="ih" (click)="addClass(id=4); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
-        <!--<i class="fas fa-gamepad"></i>-->
-        <!--<i class="far fa-play-circle"></i>-->
         <i class="fas fa-play-circle"></i>
         <span>Game</span>
       </a>
       <a class="ih" (click)="addClass(id=5); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
-        <!--<i class="fas fa-play"></i>-->
         <i class="fas fa-video"></i>
         <span>Animation</span>
       </a>
-      <a class="ih" (click)="addClass(id=6); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
-        <!--<i class="fab fa-instagram"></i>-->
+      <!--<a class="ih" (click)="addClass(id=6); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">-->
         <!--href="https://www.instagram.com/__tacenda__/"-->
-        <i class="fas fa-camera-retro"></i>
-        <span>Photography</span>
-      </a>
+        <!--<i class="fas fa-camera-retro"></i>-->
+        <!--<span>Photography</span>-->
+      <!--</a>-->
       <a class="ih" (click)="addClass(id=7); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
         <i class="fas fa-info-circle"></i>
-        <!--<i class="fas fa-info"></i>-->
         <span>More information</span>
       </a>
     </div>
-    <!--<app-intro [ngClass]="{'open': idOfOpen === 1 }"></app-intro>-->
     <app-about [ngClass]="{'open': idOfOpen === 2 }"></app-about>
     <app-portfolio [ngClass]="{'open': idOfOpen === 3 }"></app-portfolio>
     <app-game [ngClass]="{'open': idOfOpen === 4 }"></app-game>

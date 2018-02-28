@@ -13,8 +13,9 @@
   flex-flow: row wrap;
   max-width: 1290px;
 
-  > p {
+  > h6 {
     margin-left: 15px;
+    color: $ws;
 
     a {
       color: $p;
@@ -61,7 +62,7 @@
       background-color: $ws;
       transition: all .2s ease;
 
-      p:last-child {
+      h6:last-child {
         position: absolute;
         bottom: 10px;
         right: 10px;
@@ -180,11 +181,17 @@
       width: 290px;
       height: 290px;
     }
+
+    .pi.explanation {
+      width: 290px;
+      height: 290px;
+      margin: 0 15px 30px;
+    }
   }
 }
 
 @media only screen and (max-width: 767px) {
   .pi.explanation {
-    margin: 0 20px 30px !important;
+    margin: 0 15px 30px !important;
   }
 }

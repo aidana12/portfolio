@@ -24,8 +24,7 @@
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
-        "../bower_components/svg.js/dist/svg.min.js",
-        "js/game.js"
+        "../bower_components/svg.js/dist/svg.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
