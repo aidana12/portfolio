@@ -147,16 +147,7 @@
 
     .pi {
       width: 290px;
-      height: auto;
-
-      &:not(.explanation) .pt {
-        margin-top: -5px;
-        opacity: 1 !important;
-
-        * {
-          opacity: 1 !important;
-        }
-      }
+      height: 290px;
     }
 
     .pi.explanation {
@@ -170,6 +161,11 @@
 @media only screen and (max-width: 767px) {
 
   .portfolio {
+
+    .pi {
+      width: 80% !important;
+      height: auto;
+    }
 
     .pi:not(.explanation) .pt {
       margin-top: -5px;
