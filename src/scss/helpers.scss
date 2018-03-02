@@ -14,14 +14,15 @@ $g: #A6C249;
 $y: #EDE176;
 
 //-- Fonts
-@import url("https://use.typekit.net/lck7lzo.css");
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:600,700');
 
-* {
-  font-family: "Proxima Nova", sans-serif;
+*:not(h1):not(h2):not(h4):not(span) {
+  font-family: 'Lato', sans-serif;
 }
 
 $bw: 700;
 $nw: 400;
+$mw: 600;
 $lw: 200;
 
 h1, h2, h3, h4, h5, h6, p {
@@ -33,26 +34,29 @@ h1, h2, h3 {
   font-weight: $bw;
 }
 
-h1, h1 span {
-  font-size: 30px;
-  line-height: 40px;
+h1 {
+  font-size: 65px;
+  line-height: 75px;
+  font-family: 'Poppins', sans-serif;
 }
 
 h2 {
   font-size: 28px;
   line-height: 38px;
   width: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 h3 {
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 28px;
+  line-height: 38px;
 }
 
-h4, h4 span {
+h4 {
   font-size: 20px;
   line-height: 30px;
-  font-weight: $bw;
+  font-weight: $mw;
+  font-family: 'Poppins', sans-serif;
 }
 
 h5 {
@@ -68,7 +72,7 @@ h6 {
   font-weight: $nw;
 }
 
-p, p span {
+p {
   font-size: 14px;
   line-height: 25px;
   font-weight: $nw;
@@ -82,12 +86,16 @@ a {
   cursor: pointer;
 }
 
-span, button {
-  font-size: 15px;
-  line-height: 14px;
+span {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  cursor: inherit;
+}
+
+button {
   cursor: pointer;
   outline: none !important;
-
 }
 
 //-- Over variables
@@ -208,14 +216,3 @@ $box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
     transform: scale(1.1);
   }
 }
-
-.ih-el {
-  transition-property: transform;
-  transition-duration: 0.3s;
-  transform: perspective(1px) translateZ(0);
-
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-

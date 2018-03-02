@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 
 
 import {AppComponent} from './app.component';
-import {MenuComponent} from './menu/menu.component';
 import {AboutComponent} from './about/about.component';
 import {GameComponent} from './game/game.component';
 import {InstagramComponent} from './instagram/instagram.component';
@@ -15,7 +14,6 @@ import {AnimationComponent} from './animation/animation.component';
 @NgModule({
 	declarations: [
 		AppComponent,
-		MenuComponent,
 		AboutComponent,
 		GameComponent,
 		InstagramComponent,

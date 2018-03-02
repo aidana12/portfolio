@@ -51,6 +51,10 @@
       background-color: $ws;
       transition: all .2s ease;
 
+      h4 {
+        padding-bottom: 3px;
+      }
+
       > * {
         transition: all .1s ease;
       }
@@ -108,19 +112,6 @@
       height: 300px;
       margin: 50px 65px 80px;
 
-      //.pp {
-      //  display: flex;
-      //  justify-content: center;
-      //  align-items: center;
-      //  height: 100%;
-      //  background-color: $ws;
-      //
-      //  img {
-      //    width: 150px;
-      //    opacity: 0.2;
-      //  }
-      //}
-
       .pt {
         position: absolute;
         top: 0;
@@ -136,8 +127,7 @@
         background: transparent;
         transform: none;
         transition: all .3s ease;
-        //text-align: center;
-        border: 2px solid #ae81ff;
+        border: 2px solid #AE81FF;
         border-radius: 4px;
 
         * {

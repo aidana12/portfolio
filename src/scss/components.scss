@@ -54,7 +54,7 @@ body {
   flex-flow: column nowrap;
   width: 50px;
   height: 100%;
-  background-color: $bl;
+  background-color: #673AB7;
 
   a {
     position: relative;
@@ -73,6 +73,10 @@ body {
 
     &:nth-child(4) svg {
       max-height: 21px;
+    }
+
+    &:hover path{
+      fill: #fff;
     }
   }
 
@@ -100,7 +104,7 @@ body {
   justify-content: center;
   border-radius: $border-radius;
 
-  h2, h5, h1 {
+  h3, h5, h1 {
     width: 100%;
     color: $ws;
     padding-bottom: 10px;
