@@ -1,20 +1,20 @@
 <div class="lc">
-  <div class="mc" [ngClass]="{'overlay': isClassVisible === true}">
+  <div class="mc" [ngClass]="{'overlay': isClassVisible: true}">
     <div class="hc">
-      <a class="ih" (click)="addClass(id=2); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
+      <a class="ih" (click)="addClass(id=2); isClassVisible: false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
         <i class="fas fa-home"></i>
         <span>Welcome</span>
       </a>
-      <a class="ih" (click)="addClass(id=3); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
+      <a class="ih" (click)="addClass(id=3); isClassVisible: false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
         <i class="fas fa-star"></i>
         <span>Portfolio</span>
       </a>
-      <a class="ih" (click)="addClass(id=4); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
+      <a class="ih" (click)="addClass(id=4); isClassVisible: false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
         <!--<i class="fas fa-play-circle"></i>-->
         <i class="fas fa-gamepad"></i>
         <span>Game</span>
       </a>
-      <a class="ih" (click)="addClass(id=7); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
+      <a class="ih" (click)="addClass(id=7); isClassVisible: false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">
         <i class="fas fa-user-secret"></i>
         <span>About me</span>
       </a>
