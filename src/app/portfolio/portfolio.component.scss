@@ -6,30 +6,24 @@
   align-items: center;
 }
 
-.p {
+.portfolio {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   max-width: 1290px;
 
-  > h6 {
-    margin-left: 15px;
-    color: $ws;
-
-    a {
-      color: $p;
-    }
-  }
-
   .pi {
     position: relative;
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
     height: 400px;
     border-radius: $border-radius;
     overflow: hidden;
     margin: 0 15px 30px;
+
+    * {
+      color: #000500;
+    }
 
     > a {
       position: absolute;
@@ -38,10 +32,6 @@
       left: 0;
       width: 100%;
       height: 100%;
-    }
-
-    * {
-      color: #000500;
     }
 
     .pp {
@@ -58,59 +48,78 @@
     .pt {
       z-index: 1;
       position: relative;
-      padding: 15px 15px 35px;
       background-color: $ws;
       transition: all .2s ease;
-
-      h6:last-child {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-      }
 
       > * {
         transition: all .1s ease;
       }
     }
 
-    &.explanation {
-      width: 280px;
-      height: 280px;
-      margin: 60px 75px 90px;
+    &:not(.explanation) {
+      .pt {
+        padding: 15px 15px 35px;
 
-      &:hover {
-        img {
-          opacity: 1;
-        }
-
-        .pt {
-          opacity: 0;
+        h6:last-child {
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
         }
       }
 
       &:not(:hover) {
-        img {
-          opacity: 0.2;
-          transition-delay: .3s;
-        }
-
         .pt {
-          opacity: 1;
-        }
-      }
+          transform: translate(0, 0);
+          transition-delay: 0.1s;
+          opacity: 0;
 
-      .pp {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        background-color: $ws;
+          > * {
+            opacity: 0;
+          }
+        }
 
         img {
-          width: 150px;
-          transition: all .3s ease
+          transition: all .2s ease-out;
         }
       }
+
+      &:hover {
+        .pt {
+          transform: translate(0, -100%);
+          opacity: 0.99;
+          transition: all .2s ease;
+
+          > * {
+            opacity: 1;
+            transition-delay: 0.2s;
+          }
+        }
+
+        img {
+          transform: scale(1.03, 1.03);
+          transition: all .55s ease-in-out;
+        }
+      }
+    }
+
+
+    &.explanation {
+      width: 300px;
+      height: 300px;
+      margin: 50px 65px 80px;
+
+      //.pp {
+      //  display: flex;
+      //  justify-content: center;
+      //  align-items: center;
+      //  height: 100%;
+      //  background-color: $ws;
+      //
+      //  img {
+      //    width: 150px;
+      //    opacity: 0.2;
+      //  }
+      //}
 
       .pt {
         position: absolute;
@@ -118,64 +127,29 @@
         left: 0;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-flow: column nowrap;
-        width: calc(100% - 30px);
-        height: calc(100% - 50px);
+        width: calc(100% - 64px);
+        height: calc(100% - 64px);
         opacity: 1;
+        padding: 30px;
         background: transparent;
         transform: none;
         transition: all .3s ease;
-        text-align: center;
-      }
-    }
+        //text-align: center;
+        border: 2px solid #ae81ff;
+        border-radius: 4px;
 
-    &:not(.explanation):hover {
-      .pt {
-        transform: translate(0, -100%);
-        opacity: 0.99;
-        transition: all .2s ease;
-
-        > * {
-          opacity: 1;
-          transition-delay: 0.2s;
+        * {
+          color: #FBF9FC;
         }
       }
-
-      img {
-        transform: scale(1.03, 1.03);
-        transition: all .55s ease-in-out;
-      }
     }
-
-    &:not(.explanation):not(:hover) {
-      .pt {
-        transform: translate(0, 0);
-        transition-delay: 0.1s;
-        opacity: 0;
-
-        > * {
-          opacity: 0;
-        }
-      }
-
-      img {
-        transition: all .2s ease-out;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1410px) and (min-width: 980px){
-  .p {
-    max-width: 860px;
   }
 }
 
 @media only screen and (max-width: 980px){
-  .p {
-    max-width: 320px;
-    width: 100%;
+  .portfolio {
 
     .pi {
       width: 290px;
@@ -187,11 +161,5 @@
       height: 290px;
       margin: 0 15px 30px;
     }
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .pi.explanation {
-    margin: 0 15px 30px !important;
   }
 }

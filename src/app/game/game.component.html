@@ -1,17 +1,18 @@
 <div class="sc">
     <div class="game">
-        <!--<h2>Mainstream much?</h2>-->
-        <div id="board" oncontextmenu="return false;">
+        <h1 class="header">Minesweeper</h1>
+        <div id="game-board" oncontextmenu="return false;">
             <div [ngClass]="{'hideGameStart': gameStarted === true}" class="game-start">
-                <img src="../../assets/mines.svg">
-                <button (click)="startGame(); gameStarted = true" class="start btn">Start!</button>
-                <div class="gameOver">
+                <img [ngClass]="{'hideGameStart': gameStarted === true}" src="../../assets/mines.svg">
+                <button (click)="init(); gameStarted = true" class="start btn">Start!</button>
+                <div class="over">
                     <p>Hehe, you lost. :P</p>
                 </div>
-                <div class="gameWon">
+                <div class="won">
                     <p>Niiice, you won. :P</p>
                 </div>
             </div>
+            <svg id="game"></svg>
         </div>
     </div>
 </div>

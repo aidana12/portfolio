@@ -33,7 +33,7 @@ h1, h2, h3 {
   font-weight: $bw;
 }
 
-h1 {
+h1, h1 span {
   font-size: 30px;
   line-height: 40px;
 }
@@ -42,7 +42,6 @@ h2 {
   font-size: 28px;
   line-height: 38px;
   width: 100%;
-  margin: 0 15px 30px;
 }
 
 h3 {
@@ -50,21 +49,21 @@ h3 {
   line-height: 35px;
 }
 
-h4 {
-  font-size: 23px;
-  line-height: 33px;
-  font-weight: $bw;
-}
-
-h5 {
+h4, h4 span {
   font-size: 20px;
   line-height: 30px;
   font-weight: $bw;
 }
 
+h5 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: $nw;
+}
+
 h6 {
   color: $ws;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   font-weight: $nw;
 }
@@ -94,7 +93,7 @@ span, button {
 //-- Over variables
 $border-radius: 4px;
 $border-width: .15em;
-$box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+$box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 
 //-- Animations
 @mixin keyframes($name) {
@@ -156,9 +155,29 @@ $box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
   text-align: center;
 }
 
+.fw {
+  width: 100% !important;
+}
+
+.highlight {
+  color: $p !important;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 .overlay {
+  z-index: 1;
 
   &:after {
+    z-index: 1;
     content: '';
     position: absolute;
     top: 0;
@@ -179,13 +198,23 @@ $box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
 
 .ih {
 
-  svg {
+  svg, p {
     transition-property: transform;
     transition-duration: 0.3s;
     transform: perspective(1px) translateZ(0);
   }
 
-  &:hover svg {
+  &:hover svg, &:hover p {
+    transform: scale(1.1);
+  }
+}
+
+.ih-el {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transform: perspective(1px) translateZ(0);
+
+  &:hover {
     transform: scale(1.1);
   }
 }

@@ -2,6 +2,26 @@
   padding: 60px 0;
 }
 
+@media only screen and (min-width: 767px) {
+  a {
+
+    &:hover {
+
+      span {
+        display: initial;
+      }
+
+      svg path {
+        fill: $p;
+      }
+    }
+  }
+
+  .portfolio {
+    width: calc(100% - 110px);
+  }
+}
+
 @media only screen and (max-width: 767px) {
 
   .sc {
@@ -12,7 +32,7 @@
     }
 
     .pi {
-      margin: 0 15px 15px !important;
+      margin: 0 8px 15px !important;
     }
   }
 
@@ -29,4 +49,13 @@
     }
   }
 
+  .about {
+    h1 {
+      padding-bottom: 15px !important;
+    }
+  }
+
+  .header {
+    padding-bottom: 15px !important;
+  }
 }

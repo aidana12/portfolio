@@ -1,5 +1,8 @@
 import {Component} from '@angular/core';
 
+declare var jquery: any;
+declare var $: any;
+
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
@@ -11,6 +14,9 @@ export class AppComponent {
 
 	addClass(id: any) {
 		this.idOfOpen = id;
+		$('html, body').animate({
+			scrollTop: 0
+		}, 500);
 	}
 }
 

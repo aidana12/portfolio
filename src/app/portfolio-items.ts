@@ -6,7 +6,7 @@ export const PortfolioItems: PortfolioItem[] = [
 		name: 'Luminum Digital',
 		href: 'https://luminum.digital/',
 		imgPath: '../../assets/ld.png',
-		description: 'Luminum Digital is the company to go to for websites you want to manage yourself. I was lucky enough to be a part of this incredibly smart, professional, fun *cough* family *cough* team.',
+		description: 'Luminum Digital is the company to go to for websites you want to manage yourself. I was lucky enough to be a part of this incredibly smart, professional, fun team.',
 		date: 'August 2017'
 	},
 	{
@@ -14,13 +14,13 @@ export const PortfolioItems: PortfolioItem[] = [
 		name: 'Kieskompas',
 		href: 'https://amsterdam.kieskompas.nl/nl/#!/',
 		imgPath: '../../assets/kk.png',
-		description: 'Kieskompas helps you orient in the political world of 33 Dutch cities. After answering a series of questions, the web app helps you find parties your views are closest to. This is a django CMS website.',
+		description: 'Kieskompas is a Dutch voting advice website used in more than 30 Dutch cities. After answering a series of questions, the web app helps you find parties your views are closest to. This is a django CMS website.',
 		date: 'February 2018'
 	},
 	{
 		id: 5,
 		name: 'Blockport.io',
-		href: 'blockport.io',
+		href: 'https://blockport.io/',
 		imgPath: '../../assets/bp.png',
 		description: 'This is the landing page for the first social crypto exchange. I am sure you are somewhat familiar with crypto assets, so go check out the site to see what potential the social aspect has.',
 		date: 'December 2017'
@@ -38,7 +38,7 @@ export const PortfolioItems: PortfolioItem[] = [
 		name: 'Luminum Group',
 		href: 'https://luminum.group/',
 		imgPath: '../../assets/lg.png',
-		description: 'Luminum Group is a team of tech experts that build advanced platforms and websites. Luminum Group consists of Luminum Solutions, Luminum Startups, Luminum Digital, and Luminum Hosting, the difference between which you can read on the site.',
+		description: 'Luminum Group is a team of tech experts that build advanced platforms and websites. Luminum Group consists of Luminum Solutions, Luminum Startups, Luminum Digital, and Luminum Hosting.',
 		date: 'December 2017'
 	},
 	{
@@ -54,7 +54,7 @@ export const PortfolioItems: PortfolioItem[] = [
 		name: 'Tree62',
 		href: 'https://tree62.nl/',
 		imgPath: '../../assets/tree62.png',
-		description: "This is my friend's, David's, site. He was in charge of most of the designs of the websites I did front-end for. Check out his beautifully minimalistic site and send him some love.",
+		description: 'David, the face behind Tree62, was in charge of most of the designs of the websites I did front-end for. Check out his beautifully minimalistic portfolio site and send him some love.',
 		date: 'February 2018'
 	},
 	{
