@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {element} from 'protractor';
-import {start} from 'repl';
+// import { NgClass } from '@angular/common';
+// import {element} from 'protractor';
+// import {start} from 'repl';
 
 declare var jquery: any;
 declare var $: any;
@@ -12,11 +13,9 @@ declare const SVG: any;
 	styleUrls: ['./game.component.scss']
 })
 export class GameComponent implements OnInit {
-	gameStarted: false;
 
 	// -- t = tile, m = mine, b = bomb, g = group, f = flag, l = location, s = surrounding, n = number, a = array
 	// -- len = length
-
 	init = () => {
 		const gameContainer = $('.game-start')
 			, startGame = () => {
@@ -195,6 +194,7 @@ export class GameComponent implements OnInit {
 		};
 
 		if (!gameContainer.children().hasClass('show')) { // -- Start game if it's the first game
+			gameContainer.addClass('hideGameStart').find('img').addClass('hideGameStart');
 			startGame();
 		} else { // -- Clean board and restart game
 			gameContainer.addClass('hideGameStart').children().removeClass('show');

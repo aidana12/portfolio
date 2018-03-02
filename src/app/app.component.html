@@ -1,38 +1,38 @@
 <div class="lc">
-  <div class="mc" [ngClass]="{'overlay': isClassVisible}">
-    <div class="hc">
-      <a class="ih" (click)="addClass(id=2); !isClassVisible" (mouseover)="isClassVisible" (mouseout)="!isClassVisible">
-        <i class="fas fa-home"></i>
-        <span>Welcome</span>
-      </a>
-      <a class="ih" (click)="addClass(id=3); !isClassVisible" (mouseover)="isClassVisible" (mouseout)="!isClassVisible">
-        <i class="fas fa-star"></i>
-        <span>Portfolio</span>
-      </a>
-      <a class="ih" (click)="addClass(id=4); !isClassVisible" (mouseover)="isClassVisible" (mouseout)="!isClassVisible">
-        <!--<i class="fas fa-play-circle"></i>-->
-        <i class="fas fa-gamepad"></i>
-        <span>Game</span>
-      </a>
-      <a class="ih" (click)="addClass(id=7); !isClassVisible" (mouseover)="isClassVisible" (mouseout)="!isClassVisible">
-        <i class="fas fa-user-secret"></i>
-        <span>About me</span>
-      </a>
-      <!--<a class="ih" (click)="addClass(id=5); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">-->
-        <!--<i class="fas fa-video"></i>-->
-        <!--<span>Animation</span>-->
-      <!--</a>-->
-      <!--<a class="ih" (click)="addClass(id=6); isClassVisible = false" (mouseover)="isClassVisible = true;" (mouseout)="isClassVisible = false">-->
-        <!--href="https://www.instagram.com/__tacenda__/"-->
-        <!--<i class="fas fa-camera-retro"></i>-->
-        <!--<span>Photography</span>-->
-      <!--</a>-->
+    <div class="mc">
+        <div class="hc">
+            <a class="ih" (click)="addClass(idOfOpen = 2);">
+                <i class="fas fa-home"></i>
+                <span>Welcome</span>
+            </a>
+            <a class="ih" (click)="addClass(idOfOpen = 3);">
+                <i class="fas fa-star"></i>
+                <span>Portfolio</span>
+            </a>
+            <a class="ih" (click)="addClass(idOfOpen = 4);">
+                <!--<i class="fas fa-play-circle"></i>-->
+                <i class="fas fa-gamepad"></i>
+                <span>Game</span>
+            </a>
+            <a class="ih" (click)="addClass(idOfOpen = 7);">
+                <i class="fas fa-user-secret"></i>
+                <span>About me</span>
+            </a>
+            <!--<a class="ih" (click)="addClass(id=5)">-->
+            <!--<i class="fas fa-video"></i>-->
+            <!--<span>Animation</span>-->
+            <!--</a>-->
+            <!--<a class="ih" (click)="addClass(id=6)">-->
+            <!--href="https://www.instagram.com/__tacenda__/"-->
+            <!--<i class="fas fa-camera-retro"></i>-->
+            <!--<span>Photography</span>-->
+            <!--</a>-->
+        </div>
+        <app-about [ngClass]="{'open': idOfOpen === 2 }"></app-about>
+        <app-portfolio [ngClass]="{'open': idOfOpen === 3 }"></app-portfolio>
+        <app-game [ngClass]="{'open': idOfOpen === 4 }"></app-game>
+        <app-animation [ngClass]="{'open': idOfOpen === 5 }"></app-animation>
+        <app-instagram [ngClass]="{'open': idOfOpen === 6 }"></app-instagram>
+        <app-info [ngClass]="{'open': idOfOpen === 7 }"></app-info>
     </div>
-    <app-about [ngClass]="{'open': idOfOpen === 2 }"></app-about>
-    <app-portfolio [ngClass]="{'open': idOfOpen === 3 }"></app-portfolio>
-    <app-game [ngClass]="{'open': idOfOpen === 4 }"></app-game>
-    <app-animation [ngClass]="{'open': idOfOpen === 5 }"></app-animation>
-    <app-instagram [ngClass]="{'open': idOfOpen === 6 }"></app-instagram>
-    <app-info [ngClass]="{'open': idOfOpen === 7 }"></app-info>
-  </div>
 </div>

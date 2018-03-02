@@ -2,9 +2,9 @@
     <div class="game">
         <h2 class="header">Minesweeper</h2>
         <div id="game-board" oncontextmenu="return false;">
-            <div [ngClass]="{'hideGameStart': gameStarted === true}" class="game-start">
-                <img [ngClass]="{'hideGameStart': gameStarted === true}" src="../../assets/mines.svg">
-                <button (click)="init(); gameStarted = true" class="start btn">Start</button>
+            <div class="game-start">
+                <img src="../../assets/mines.svg">
+                <button (click)="init()" class="start btn">Start</button>
                 <div class="over">
                     <p>Hehe, you lost. :P</p>
                 </div>
