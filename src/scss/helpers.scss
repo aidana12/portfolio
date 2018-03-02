@@ -172,7 +172,14 @@ $box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 .link {
+  transition-property: color;
+  transition-duration: 0.3s;
   text-decoration: underline;
+
+  &:hover {
+    color: $p !important;
+    text-decoration: none;
+  }
 }
 
 .header {
