@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 
 
 import {AppComponent} from './app.component';
+
 import {AboutComponent} from './about/about.component';
 import {GameComponent} from './game/game.component';
 import {InstagramComponent} from './instagram/instagram.component';
