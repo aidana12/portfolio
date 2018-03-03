@@ -129,7 +129,7 @@ body {
     margin: 0 15px 30px;
 
     * {
-      color: #000500;
+      color: $b;
     }
 
     > a {
@@ -196,11 +196,11 @@ body {
         background: transparent;
         transform: none;
         transition: all .3s ease;
-        border: $border-width solid #AE81FF;
+        border: $border-width solid $p;
         border-radius: $border-radius;
 
         * {
-          color: #FBF9FC;
+          color: $ws;
         }
       }
     }
@@ -217,7 +217,7 @@ body {
   margin: 0 auto;
 
   * {
-    color: #FBF9FC;
+    color: $ws;
   }
 
   > div {
@@ -235,7 +235,7 @@ body {
 
     &.contact {
       padding: 30px;
-      border: $border-width solid #AE81FF;
+      border: $border-width solid $p;
       border-radius: $border-radius;
       width: 330px;
     }
@@ -250,7 +250,7 @@ body {
       margin-right: 5px;
 
       path {
-        fill: #AE81FF;
+        fill: $p;
       }
     }
   }
@@ -261,11 +261,11 @@ body {
     margin: 10px 15px 0 0;
 
     path {
-      fill: #FBF9FC;
+      fill: $ws;
     }
 
     &:hover path {
-      fill: #AE81FF;
+      fill: $p;
     }
   }
 }
