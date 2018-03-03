@@ -182,9 +182,12 @@ export class GameComponent implements OnInit {
 			});
 
 			g.on('contextmenu', function () {
-				const numbers = this.parent().attr('class').match(/[+-]?\d+(?:\.\d+)?/g).map(Number)[0];
+				const thisT = this.parent()
+					, numbers = this.parent().attr('class').match(/[+-]?\d+(?:\.\d+)?/g).map(Number)[0];
 
-				coordinates(numbers, 2, 12, '../../../assets/flag.svg');
+				if (!thisT.hasClass('open')) {
+					coordinates(numbers, 2, 12, '../../../assets/flag.svg');
+				}
 			});
 
 			const game = (end) => {
