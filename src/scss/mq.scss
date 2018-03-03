@@ -108,7 +108,8 @@
 
     .portfolio-item {
       width: 80% !important;
-      height: auto;
+      height: auto !important;
+      max-width: 400px;
     }
 
     .portfolio-item:not(.explanation) .portfolio-text {

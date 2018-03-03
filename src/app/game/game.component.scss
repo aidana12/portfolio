@@ -1,3 +1,6 @@
+$border-radius: 4px;
+$border-width: 2px;
+
 .game {
   display: flex;
   justify-content: center;
@@ -28,7 +31,7 @@
       width: 75px;
       padding: 7.5px;
       background-color: #1d1d22;
-      border: 2px solid #AE81FF;
+      border: $border-width solid #AE81FF;
     }
 
     img {
