@@ -14,7 +14,7 @@ export const PortfolioItems: PortfolioItem[] = [
 		name: 'Kieskompas',
 		href: 'https://amsterdam.kieskompas.nl/nl/#!/',
 		imgPath: '../../assets/kk.png',
-		description: 'Kieskompas is a Dutch voting advice website used in more than 30 Dutch cities. After answering a series of questions, the web app helps you find parties your views are closest to. This is a django CMS website.',
+		description: 'Kieskompas is a Dutch voting advice website used in more than 30 Dutch cities and many other European countries. After answering a series of questions, the web app helps you find parties your views are closest to. This is a django CMS website.',
 		date: 'February 2018'
 	},
 	{
@@ -62,7 +62,7 @@ export const PortfolioItems: PortfolioItem[] = [
 		name: 'Grustle',
 		href: 'https://grustle.nl/en/',
 		imgPath: '../../assets/grustle.png',
-		description: 'Grustle is a merchandise webshop for Dutch artists. Check out the website for artists like KaliBwoy, Coño, Jhorrmountain, and others. This is a Wagtail CMS website.',
+		description: 'Grustle is a merch webshop for Dutch artists. Check out the website for artists like KaliBwoy, Coño, Jhorrmountain, and others. This is a Wagtail CMS website.',
 		date: 'February 2018'
 	},
 ];

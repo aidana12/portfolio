@@ -1,4 +1,8 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
+declare var jquery: any;
+declare var $: any;
+declare const SVG: any;
 
 @Component({
 	selector: 'app-about',
