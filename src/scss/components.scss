@@ -269,8 +269,16 @@ body {
       width: auto;
       margin-right: 5px;
 
-      path {
-        fill: $p;
+      &.fa-code path {
+        fill: $g;
+      }
+
+      &.fa-wrench path {
+        fill: #FED766;
+      }
+
+      &.fa-graduation-cap path {
+        fill: $blu;
       }
     }
   }
@@ -282,10 +290,6 @@ body {
 
     path {
       fill: $ws;
-    }
-
-    &:hover path {
-      fill: $p;
     }
   }
 }
