@@ -71,7 +71,7 @@ export class GameComponent implements OnInit {
 				} else {
 					const text = board.text(l.toString());
 
-					text.move(x + 8.5, y + 6).fill(object).size(12).font('weight', '700'); // -- these numbers depend on dimensions of text
+					text.move(x + 8.5, y + 6).fill(object).size(12).font({family: 'Lato', weight: 700}); // -- these numbers depend on dimensions of text
 					set.add(text).add(t).style('cursor', 'pointer').addClass('tile tile' + order);
 
 					if (l === 0) {

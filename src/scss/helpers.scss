@@ -9,22 +9,30 @@ $ws: #FBF9FC;
 $rq: #A39BA8;
 $r: #CD4E55;
 $p: #AE81FF;
+$d-p: #8966C9;
 $blu: #69BAE5;
-$d-blu: #4392F1;
+$d-blu: #00BCD4;
 $g: #A6C249;
 $y: #F2E679;
 
 //-- Fonts
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:600,700');
 
-*:not(h1):not(h2):not(h4):not(span) {
+h1, h2, h4 {
+  font-family: 'Poppins', sans-serif;
+
+  > * {
+    font-family: 'Poppins', sans-serif !important;
+  }
+}
+
+h3, h5, h6, p, span, a, button {
   font-family: 'Lato', sans-serif;
 }
 
 $bw: 700;
-$nw: 400;
 $mw: 600;
-$lw: 200;
+$nw: 400;
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -38,14 +46,12 @@ h1, h2, h3 {
 h1 {
   font-size: 65px;
   line-height: 75px;
-  font-family: 'Poppins', sans-serif;
 }
 
 h2 {
   font-size: 28px;
   line-height: 38px;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
 }
 
 h3 {
@@ -57,7 +63,6 @@ h4 {
   font-size: 20px;
   line-height: 30px;
   font-weight: $mw;
-  font-family: 'Poppins', sans-serif;
 }
 
 h5 {
@@ -172,14 +177,23 @@ $box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 .link {
-  transition-property: color;
-  transition-duration: 0.3s;
-  //text-decoration: underline;
-  font-weight: 700;
+  position: relative;
+  z-index: 0;
 
-  &:hover {
-    color: $p !important;
-    text-decoration: none;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+    width: 101%;
+    height: 40%;
+    background: #8966C9;
+    z-index: -1;
+    transition: background-color 0.3s;
+  }
+
+  &:hover:before {
+    background: transparent;
   }
 }
 
@@ -207,8 +221,7 @@ $box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 .ih {
 
   svg, p {
-    transition-property: transform;
-    transition-duration: 0.3s;
+    transition: transform 0.3s;
     transform: perspective(1px) translateZ(0);
   }
 

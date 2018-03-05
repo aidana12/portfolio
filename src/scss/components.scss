@@ -81,7 +81,7 @@ body {
   .ih:not(.open):hover {
 
     path {
-      fill: $p;
+      fill: #fff;
     }
 
     span:before {
@@ -106,7 +106,7 @@ body {
   svg {
     width: 20px !important;
     height: auto;
-    margin-top: 15px;
+    margin: 8px 0;
 
     path {
       fill: $ws;

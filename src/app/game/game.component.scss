@@ -32,6 +32,11 @@ $border-width: 2px;
       padding: 7.5px;
       background-color: #1d1d22;
       border: $border-width solid #AE81FF;
+      transition: border 0.3s ease-in;
+
+      &:hover {
+        border-color: #8966C9;
+      }
     }
 
     img {
