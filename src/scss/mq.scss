@@ -126,24 +126,31 @@
     width: 100%;
     height: 50px;
 
-    .open span {
-      color: $p;
+    .ih:not(.home) {
+
+      &.open span {
+        color: $p;
+      }
+
+      span {
+        display: initial !important;
+        position: initial !important;
+        width: auto !important;
+        font-weight: 700;
+      }
+
+      svg {
+        display: none;
+        margin: 0;
+      }
     }
 
-    span {
-      display: initial !important;
-      position: initial !important;
-      width: auto !important;
-      font-weight: 700;
-    }
+    .home {
+      padding-right: 70px;
 
-    .cta {
-      display: none !important;
-    }
-
-    svg {
-      display: none;
-      margin: 0;
+      .cta {
+        display: none !important;
+      }
     }
   }
 
