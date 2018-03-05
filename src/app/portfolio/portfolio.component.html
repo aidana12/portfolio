@@ -1,12 +1,13 @@
 <div class="sc">
   <div class="portfolio">
-    <h2 class="header">Portfolio</h2>
+    <h2 class="header">Work</h2>
     <div class="portfolio-item" *ngFor="let PortfolioItem of PortfolioItem">
       <a target="_blank" href="{{ PortfolioItem.href }}"></a>
       <div class="portfolio-image">
         <img src="{{ PortfolioItem.imgPath }}">
       </div>
       <div class="portfolio-text">
+        <i class="fas fa-external-link-alt"></i>
         <h4>{{ PortfolioItem.name }}</h4>
         <h6>{{ PortfolioItem.description }}</h6>
         <h6>{{ PortfolioItem.date }}</h6>

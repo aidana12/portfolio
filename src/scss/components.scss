@@ -58,10 +58,20 @@ body {
   height: 100%;
   background-color: $bl;
 
-  a {
+  div {
     position: relative;
 
-    span {
+    > svg {
+      width: 20px !important;
+      height: auto;
+      margin: 8px 0;
+
+      path {
+        fill: $ws;
+      }
+    }
+
+    > span {
       display: none;
       position: absolute;
       top: calc(50% - 7px);
@@ -76,42 +86,69 @@ body {
     &:nth-child(4) svg {
       max-height: 21px;
     }
-  }
 
-  .ih:not(.open):hover {
+    &.open {
 
-    path {
-      fill: #fff;
+      > svg path {
+        fill: $p !important;
+      }
+
+      .cta {
+        display: initial;
+        left: -17px;
+        top: 175px;
+        width: 50px;
+        height: 13px;
+        transform: rotate(270deg);
+        font-size: 13px;
+        line-height: 13px;
+
+        span {
+          position: relative;
+          display: inline-block;
+          width: 10px;
+          height: 13px;
+          margin-left: 6px;
+
+          svg {
+            position: absolute;
+            top: 2px;
+            transform: translateX(0px);
+            animation: arrow 2s ease-in-out infinite alternate;
+          }
+        }
+      }
     }
 
-    span:before {
-      content: '';
-      z-index: -1;
-      position: fixed;
-      top: 0;
-      left: 50px;
-      height: 100vh;
-      width: 100vw;
-      background: rgba(14, 14, 14, 0.8);
+    &:not(.open) {
+
+      &:hover {
+
+        path {
+          fill: #fff;
+        }
+
+        span:before {
+          content: '';
+          z-index: -1;
+          position: fixed;
+          top: 0;
+          left: 50px;
+          height: 100vh;
+          width: 100vw;
+          background: rgba(14, 14, 14, 0.8);
+        }
+      }
+
+      .cta {
+        display: none !important;
+      }
     }
   }
+}
 
-  .open {
-
-    path {
-      fill: $p !important;
-    }
-  }
-
-  svg {
-    width: 20px !important;
-    height: auto;
-    margin: 8px 0;
-
-    path {
-      fill: $ws;
-    }
-  }
+.open {
+  animation: customFadeIn 0.25s ease-in;
 }
 
 .section {
@@ -184,6 +221,18 @@ body {
 
       > * {
         transition: all .1s ease;
+      }
+
+      svg {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        height: 20px;
+        width: auto;
+
+        path {
+          fill: $b;
+        }
       }
     }
 

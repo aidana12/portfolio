@@ -1,23 +1,24 @@
 <div class="lc">
     <div class="mc">
         <div class="hc">
-            <a class="ih" (click)="addClass(idOfOpen = 2);" [ngClass]="{'open': idOfOpen === 2 }">
+            <div class="ih" (click)="addClass(idOfOpen = 2);" [ngClass]="{'open': idOfOpen === 2 }">
                 <i class="fas fa-home"></i>
-                <span>Welcome</span>
-            </a>
-            <a class="ih" (click)="addClass(idOfOpen = 3);" [ngClass]="{'open': idOfOpen === 3 }">
+                <span>Home</span>
+                <span class="cta">Click<span><i class="fas fa-long-arrow-alt-right"></i></span></span>
+            </div>
+            <div class="ih" (click)="addClass(idOfOpen = 3);" [ngClass]="{'open': idOfOpen === 3 }">
                 <i class="fas fa-star"></i>
-                <span>Portfolio</span>
-            </a>
-            <a class="ih" (click)="addClass(idOfOpen = 4);" [ngClass]="{'open': idOfOpen === 4 }">
+                <span>Work</span>
+            </div>
+            <div class="ih" (click)="addClass(idOfOpen = 4);" [ngClass]="{'open': idOfOpen === 4 }">
                 <!--<i class="fas fa-play-circle"></i>-->
                 <i class="fas fa-gamepad"></i>
                 <span>Game</span>
-            </a>
-            <a class="ih" (click)="addClass(idOfOpen = 7);" [ngClass]="{'open': idOfOpen === 7 }">
+            </div>
+            <div class="ih" (click)="addClass(idOfOpen = 7);" [ngClass]="{'open': idOfOpen === 7 }">
                 <i class="fas fa-user-secret"></i>
-                <span>About me</span>
-            </a>
+                <span>About</span>
+            </div>
             <!--<a class="ih" (click)="addClass(id=5)">-->
             <!--<i class="fas fa-video"></i>-->
             <!--<span>Animation</span>-->
