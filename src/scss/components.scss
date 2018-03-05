@@ -31,7 +31,7 @@ body {
     min-height: 100vh;
   }
 
-  > *.open {
+  > .open {
     display: flex;
   }
 
@@ -162,6 +162,11 @@ body {
 .about {
   justify-content: flex-start;
   border-radius: $border-radius;
+
+  span:before {
+    left: -2px;
+    bottom: 8%;
+  }
 
   h3, h5, h1 {
     width: 100%;
