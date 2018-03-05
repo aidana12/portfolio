@@ -147,16 +147,16 @@ body {
   }
 }
 
-.open {
-  animation: customFadeIn 0.25s ease-in;
-}
-
 .section {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   margin: 0 auto;
   max-width: 960px;
+}
+
+.open {
+  animation: customFadeIn 0.25s ease-in;
 }
 
 .about {
@@ -175,12 +175,16 @@ body {
   }
 }
 
-.portfolio {
+.info, .portfolio {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
   max-width: 1290px;
+  margin: 0 auto;
+}
+
+.portfolio {
+  align-items: center;
 
   .portfolio-item {
     position: relative;
@@ -219,10 +223,6 @@ body {
       position: relative;
       background-color: $ws;
       transition: all .2s ease;
-
-      h4 {
-        padding-bottom: 3px;
-      }
 
       > * {
         transition: all .1s ease;
@@ -282,13 +282,8 @@ body {
 }
 
 .info {
-  display: flex;
-  justify-content: center;
   align-items: flex-start;
-  flex-flow: row wrap;
-  max-width: 1290px;
   width: 100%;
-  margin: 0 auto;
 
   * {
     color: $ws;
