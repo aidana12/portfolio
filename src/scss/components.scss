@@ -33,6 +33,7 @@ body {
 
   > .open {
     display: flex;
+    animation: customFadeIn 0.25s ease-in;
   }
 
   .sc {
@@ -153,10 +154,6 @@ body {
   flex-flow: row wrap;
   margin: 0 auto;
   max-width: 960px;
-}
-
-.open {
-  animation: customFadeIn 0.25s ease-in;
 }
 
 .about {
