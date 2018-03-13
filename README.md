@@ -1,5 +1,5 @@
 # Portfolio Website 
-This is my portfolio website generated and developed with Angular CLI. You can see the portfolio here: aidana.xyz
+This is my portfolio website generated and developed with Angular CLI. You can see the portfolio here: https://www.aidana.xyz/
 The website consists of a portfolio overview of all websites I have worked on, a game and an about me section.
 
 ## Installing dependencies
