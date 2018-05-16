@@ -304,6 +304,14 @@ body {
       border: $border-width solid $p;
       border-radius: $border-radius;
       width: 330px;
+
+      .fa-external-link-alt {
+        padding-left: 5px;
+
+        path {
+          fill: $p;
+        }
+      }
     }
   }
 
